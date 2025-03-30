@@ -34,7 +34,7 @@ public class LinearCandleController : MonoBehaviour
     {
         float input = Input.GetAxis("Horizontal");
         currentPosition += input * sensitivity;
-        currentPosition = Mathf.Clamp(currentPosition, -moveRange, moveRange);
+        currentPosition = Mathf.Clamp(currentPosition, 0, moveRange);
         Vector3 localPos = movementAxis.InverseTransformPoint(axisOrigin);
         localPos.z = currentPosition;
         transform.position = movementAxis.TransformPoint(localPos);
@@ -44,9 +44,7 @@ public class LinearCandleController : MonoBehaviour
     {
         float u = Vector3.Distance(transform.position, pinhole.position);
         float v = Vector3.Distance(pinhole.position, screen.position);
-        float scaleFactor = v / u;
+        float scaleFactor = u / v;
         imageCandle.localScale = originalImageSize * (scaleFactor * realHeight);
-        Vector3 relativePos = pinhole.InverseTransformPoint(transform.position);
-        imageCandle.position=pinhole.TransformPoint(new Vector3(-relativePos.x,-relativePos.y,relativePos.z));
     }
 }
