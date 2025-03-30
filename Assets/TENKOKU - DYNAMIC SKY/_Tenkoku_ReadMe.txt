@@ -1,7 +1,7 @@
 ---------------------------------------------------
 TENKOKU - DYNAMIC SKY
 
-Copyright ©2019 Tanuki Digital
+Copyright ?019 Tanuki Digital
 Version 1.2.2
 ---------------------------------------------------
 
@@ -54,11 +54,11 @@ http://tanukidigital.com/tenkoku/documentation
 INSTALLATION
 -------------
 I. IMPORT TENKOKU FILES INTO YOUR PROJCT
-Go to: “Assets -> Import Package -> Custom Package...” in the Unity Menu and select the “tenkoku_dynamicsky_ver1.x.unitypackage” file. This will open an import dialog box. Click the import button and all the Tenkoku files will be imported into your project list.
+Go to: æ‚ssets -> Import Package -> Custom Package...?in the Unity Menu and select the æ•enkoku_dynamicsky_ver1.x.unitypackage?file. This will open an import dialog box. Click the import button and all the Tenkoku files will be imported into your project list.
 
 II. ADD THE TENKOKU MODULE TO YOUR SCENE
-1) Drag the Tenkoku DynamicSky prefab located in the “/PREFABS” folder into your scene list.
-2) If it isn’t set already, make sure to set the Tenkoku DynamicSky’s position in the transform settings to 0,0,0
+1) Drag the Tenkoku DynamicSky prefab located in the ?PREFABS?folder into your scene list.
+2) If it isnæŠ° set already, make sure to set the Tenkoku DynamicSkyæŠ¯ position in the transform settings to 0,0,0
 
 III. ADD TENKOKU EFFECTS TO YOUR CAMERA
 1) Click on your main camera object and add the Tenkoku Fog effect by going to Component-->Image Effects-->Tenkoku-->Tenkoku Fog.
@@ -70,7 +70,7 @@ Note: For best results this effect should be placed to render AFTER your Tonemap
 
 
 A Note About Scene Cameras:
-Tenkoku relies on tracking your main scene camera in order to properly update in the scene.  By default Tenkoku attempts to auto locate your camera by selecting the camera in your scene with the ‘MainCamera’ tag.  Alternatively you can set it to manual mode and drag the appropriate camera into the ‘Scene Camera’ slot.
+Tenkoku relies on tracking your main scene camera in order to properly update in the scene.  By default Tenkoku attempts to auto locate your camera by selecting the camera in your scene with the æ…šainCamera?tag.  Alternatively you can set it to manual mode and drag the appropriate camera into the æ…¡cene Camera?slot.
 
 
 
