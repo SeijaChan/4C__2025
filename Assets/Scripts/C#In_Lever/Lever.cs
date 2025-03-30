@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
     [Header("References")]
     public Transform[] snapPoints; // 吸附点数组
-    public Transform povit;  // 需要拖动的子物体
+    public Transform povit;  // 需要拖动的中心点
     public float sensitivity = 0.01f; // 鼠标灵敏度
+    public GameObject theLever;
 
     [Header("Visual Settings")]
     public Color highlightedColor = new Color(1, 1, 1, 0.5f); // 拖动时的半透明颜色
@@ -19,9 +21,14 @@ public class Lever : MonoBehaviour
     private float _startMouseX;
     private Material _highlightedMaterial;
     private Material _originalMaterial;
+    private HingeJoint _joint;
+    private Rigidbody _leverRb;
 
     void Start()
     {
+        _joint = theLever.GetComponent<HingeJoint>();
+        _leverRb = theLever.GetComponent<Rigidbody>();
+        SetPositionLock(_leverRb, false, true, true);
         // 获取子物体渲染器并初始化材质
         _childRenderer = povit.GetComponent<Renderer>();
         if (_childRenderer == null)
@@ -52,6 +59,7 @@ public class Lever : MonoBehaviour
                 if (hit.transform == povit)
                 {
                     Vector3 vector3 = povit.transform.position;
+                    _joint.connectedBody = null;
                     StartDrag(vector3);
                 }
             }
@@ -67,6 +75,8 @@ public class Lever : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && _isDragging)
         {
             StopDrag();
+            _joint.anchor = new Vector3(povit.position.x/theLever.transform.localScale.x, povit.position.y / theLever.transform.localScale.y, povit.position.z / theLever.transform.localScale.z);
+            _joint.connectedBody = povit.GetComponent<Rigidbody>();
         }
     }
 
@@ -124,5 +134,17 @@ public class Lever : MonoBehaviour
         {
             povit.position = nearestSnap.position;
         }
+    }
+
+    public void SetPositionLock(Rigidbody rb,bool lockX, bool lockY, bool lockZ)
+    {
+        RigidbodyConstraints constraints = rb.constraints;
+
+        // 使用位掩码正确组合约束
+        constraints |= lockX ? RigidbodyConstraints.FreezePositionX : 0;
+        constraints |= lockY ? RigidbodyConstraints.FreezePositionY : 0;
+        constraints |= lockZ ? RigidbodyConstraints.FreezePositionZ : 0;
+
+        rb.constraints = constraints;
     }
 }
