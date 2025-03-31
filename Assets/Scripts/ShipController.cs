@@ -12,6 +12,7 @@ public class ShipController : MonoBehaviour
     public float tiltLimit = 30f;
     private Rigidbody _shipRb;
 
+    private float _temp;
     private void Start()
     {
         _shipRb = GetComponent<Rigidbody>();
@@ -21,25 +22,28 @@ public class ShipController : MonoBehaviour
     {
         if (isFlowBegin && hasBulkheads)
         {
-            rotateAngle = Mathf.Clamp(rotateSpeed * Time.deltaTime, 0, tiltLimit);
-            _shipRb.rotation = Quaternion.Euler(rotateAngle, 0, 0);
+            _temp += rotateSpeed * Time.deltaTime;
+            rotateAngle = Mathf.Clamp(_temp, 0, tiltLimit);
+            _shipRb.rotation = Quaternion.Euler(0, 0, -rotateAngle);
         }
 
         if (isFlowBegin && !hasBulkheads)
         {
             rotateAngle += rotateSpeed * Time.deltaTime;
-            _shipRb.rotation = Quaternion.Euler(rotateAngle, 0, 0);
+            _shipRb.rotation = Quaternion.Euler(0, 0, -rotateAngle);
             if (rotateAngle > tiltLimit)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
 
     public void ResetShip()
     {
+        gameObject.SetActive(true);
+        _temp = 0;
         isFlowBegin = false;
-        rotateAngle = rotateSpeed = 0;
+        rotateAngle = 0;
         _shipRb.rotation = Quaternion.Euler(rotateAngle, 0, 0);
     }
 

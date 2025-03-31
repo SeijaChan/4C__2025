@@ -15,12 +15,13 @@ public class LinearCandleController : MonoBehaviour
     public Transform imageCandle;
 
     private Vector3 axisOrigin;
+    private Vector3 originalPosition;
     private Vector3 originalImageSize;
     private float currentPosition;
 
     private void Start()
     {
-        axisOrigin = movementAxis.position;
+        originalPosition = transform.position;
         originalImageSize = imageCandle.localScale;
     }
 
@@ -34,10 +35,8 @@ public class LinearCandleController : MonoBehaviour
     {
         float input = Input.GetAxis("Horizontal");
         currentPosition += input * sensitivity;
-        currentPosition = Mathf.Clamp(currentPosition, 0, moveRange);
-        Vector3 localPos = movementAxis.InverseTransformPoint(axisOrigin);
-        localPos.z = currentPosition;
-        transform.position = movementAxis.TransformPoint(localPos);
+        currentPosition = Mathf.Clamp(currentPosition, -moveRange, moveRange);
+        gameObject.transform.position =originalPosition + new Vector3(currentPosition, 0, 0);
     }
 
     private void UpdateOptics()
