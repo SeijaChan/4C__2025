@@ -6,5 +6,5 @@ public class RhythmCore : MonoBehaviour
 {
     public AudioClip musicClip;
     public float[] beatTimes;
-    public 
+    
 }

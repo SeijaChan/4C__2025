@@ -10,7 +10,7 @@ namespace Sound
 
         public void Swing()
         {
-            if()
+            
         }
 
         private IEnumerator DoSwing()
