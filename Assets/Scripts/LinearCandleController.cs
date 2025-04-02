@@ -6,7 +6,6 @@ using UnityEngine.Serialization;
 
 public class LinearCandleController : MonoBehaviour
 {
-    public Transform movementAxis;
     public float moveRange = 2.0f;
     public float sensitivity = 0.1f;
     public Transform pinhole;
@@ -14,15 +13,15 @@ public class LinearCandleController : MonoBehaviour
     public float realHeight = 1.0f;
     public Transform imageCandle;
 
-    private Vector3 axisOrigin;
-    private Vector3 originalPosition;
-    private Vector3 originalImageSize;
-    private float currentPosition;
+    private Vector3 _axisOrigin;
+    private Vector3 _originalPosition;
+    private Vector3 _originalImageSize;
+    private float _currentPosition;
 
     private void Start()
     {
-        originalPosition = transform.position;
-        originalImageSize = imageCandle.localScale;
+        _originalPosition = transform.position;
+        _originalImageSize = imageCandle.localScale;
     }
 
     private void Update()
@@ -34,9 +33,9 @@ public class LinearCandleController : MonoBehaviour
     private void HandleInput()
     {
         float input = Input.GetAxis("Horizontal");
-        currentPosition += input * sensitivity;
-        currentPosition = Mathf.Clamp(currentPosition, -moveRange, moveRange);
-        gameObject.transform.position =originalPosition + new Vector3(currentPosition, 0, 0);
+        _currentPosition += input * sensitivity;
+        _currentPosition = Mathf.Clamp(_currentPosition, -moveRange, moveRange);
+        gameObject.transform.position =_originalPosition + new Vector3(_currentPosition, 0, 0);
     }
 
     private void UpdateOptics()
@@ -44,6 +43,6 @@ public class LinearCandleController : MonoBehaviour
         float u = Vector3.Distance(transform.position, pinhole.position);
         float v = Vector3.Distance(pinhole.position, screen.position);
         float scaleFactor = u / v;
-        imageCandle.localScale = originalImageSize * (scaleFactor * realHeight);
+        imageCandle.localScale = _originalImageSize * (scaleFactor * realHeight);
     }
 }
