@@ -40,22 +40,48 @@ public class ChimeManager : MonoBehaviour
         {
             Chime chime = child.GetComponent<Chime>();
             int id = chime.id;
+            chime.Parent = gameObject;
             // 将一维ID转换为二维坐标
             int row = (id - 1) / columns;
             int col = (id - 1) % columns;
 
             if (col > 0)
-                chime.neighbor.Add(chimes[(row * columns) + col - 1].GetComponent<Chime>());
+                chime.neighbors.Add(chimes[(row * columns) + col - 1].GetComponent<Chime>());
 
             if (col < columns - 1)
-                chime.neighbor.Add(chimes[(row * columns) + col + 1].GetComponent<Chime>());
+                chime.neighbors.Add(chimes[(row * columns) + col + 1].GetComponent<Chime>());
 
             if (row > 0)
-                chime.neighbor.Add(chimes[((row - 1) * columns) + col].GetComponent<Chime>());
+                chime.neighbors.Add(chimes[((row - 1) * columns) + col].GetComponent<Chime>());
 
             if (row < rows - 1)
-                chime.neighbor.Add(chimes[((row + 1) * columns) + col].GetComponent<Chime>());
+                chime.neighbors.Add(chimes[((row + 1) * columns) + col].GetComponent<Chime>());
         }
+    }
+
+    public bool CheckFinish()
+    {
+        int activeCount = 0;
+        int total = chimes.Count;
+
+        foreach (GameObject chimeObject in chimes)
+        {
+            Chime chime = chimeObject.GetComponent<Chime>();
+
+            if (chime == null) continue;
+
+            if (chime.isSyntony)
+            {
+                activeCount++;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        Debug.Log("结束力");
+        return activeCount == total;
     }
 
     void OnDrawGizmos()
@@ -65,7 +91,7 @@ public class ChimeManager : MonoBehaviour
         {
             Vector3 pos = chime.transform.position;
             Gizmos.DrawWireSphere(pos, 0.2f);
-            foreach (var neighbor in chime.GetComponent<Chime>().neighbor)
+            foreach (var neighbor in chime.GetComponent<Chime>().neighbors)
             {
                 Gizmos.DrawLine(pos, neighbor.transform.position);
             }
