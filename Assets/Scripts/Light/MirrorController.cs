@@ -6,8 +6,6 @@ using UnityEngine.Serialization;
 
 public class MirrorController : MonoBehaviour
 {
-    public transform 
-    
     public LineRenderer focusRay;
     public GameObject focusMarker;
     
