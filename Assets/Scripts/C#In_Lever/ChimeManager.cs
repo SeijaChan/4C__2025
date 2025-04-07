@@ -15,6 +15,34 @@ public class ChimeManager : MonoBehaviour
         SetChlidrenNeighbor();
     }
 
+    private void Update()
+    {
+        HandleClickDetection();
+
+    }
+
+    void HandleClickDetection()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                Chime clickedChime = hit.collider.GetComponentInParent<Chime>();
+
+                if (clickedChime != null)
+                {
+                    //Debug.Log(clickedChime);
+                    clickedChime.ToggleSyntony(clickedChime);
+                    soundsManager.Instance.SfxPlay("chime");
+                    CheckFinish();
+                }
+            }
+        }
+    }
+
     void AssignIDsToChildren()//子物体的钟会从左往右，从上往下排列（不能打乱，为了后面的获取算法）
     {
         foreach(Transform child in transform)
@@ -40,7 +68,6 @@ public class ChimeManager : MonoBehaviour
         {
             Chime chime = child.GetComponent<Chime>();
             int id = chime.id;
-            chime.Parent = gameObject;
             // 将一维ID转换为二维坐标
             int row = (id - 1) / columns;
             int col = (id - 1) % columns;

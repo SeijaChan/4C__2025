@@ -5,7 +5,7 @@ using System;
 
 public class soundsManager : MonoBehaviour
 {
-    public Sound[] musicSounds, SfxSounds;
+    public Sounds[] musicSounds, SfxSounds;
     public AudioSource musicSource, SfxSource;
 
     public static soundsManager Instance;
@@ -28,7 +28,7 @@ public class soundsManager : MonoBehaviour
     }
     public void PlayMusic(string name)
     {
-        Sound s = Array.Find(musicSounds, x => x.name == name);
+        Sounds s = Array.Find(musicSounds, x => x.name == name);
         if (s != null)
         {
             musicSource.clip = s.clip;
@@ -37,7 +37,7 @@ public class soundsManager : MonoBehaviour
     }
     public void SfxPlay(string name)
     {
-        Sound s = Array.Find(SfxSounds, x => x.name == name);
+        Sounds s = Array.Find(SfxSounds, x => x.name == name);
         if (s != null)
         {
             SfxSource.PlayOneShot(s.clip);
