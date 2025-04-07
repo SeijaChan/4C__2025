@@ -5,11 +5,8 @@ using UnityEngine;
 
 public class MicroMirror : MonoBehaviour
 {
-    public Transform[] lights;
     public Transform focalPoint;
     public LineRenderer lightRenderer;
-    public float limit;
-    
     private bool _isShoot;
 
     private void Update()
@@ -25,17 +22,30 @@ public class MicroMirror : MonoBehaviour
             lightRenderer.SetPosition(0,transform.position);
             lightRenderer.SetPosition(1, focalPoint.position);
         }
-
-        foreach (var lightRay in lights)
+        else
         {
-            if (lightRay.position.y - transform.position.y < limit &&
-                lightRay.position.y - transform.position.y > -limit)
-            {
-                _isShoot = true;
-                break;
-            }
-            _isShoot = false;
             lightRenderer.enabled = false;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Light"))
+        {
+            _isShoot = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Light"))
+        {
+            _isShoot = false;
+        }
+    }
+
+    private void Move()
+    {
+        
     }
 }
