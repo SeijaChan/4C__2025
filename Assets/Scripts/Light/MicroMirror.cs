@@ -43,9 +43,4 @@ public class MicroMirror : MonoBehaviour
             _isShoot = false;
         }
     }
-
-    private void Move()
-    {
-        
-    }
 }
