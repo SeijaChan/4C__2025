@@ -11,4 +11,5 @@ public class CompassController : MonoBehaviour
        
         needle.rotation = Quaternion.Euler(0, 0, -angleSlider.value);
     }
+
 }

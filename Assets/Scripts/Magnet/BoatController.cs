@@ -23,7 +23,7 @@ public class BoatController : MonoBehaviour
     {
         inputAngle = angle;
     }
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Obstacle"))
         {
