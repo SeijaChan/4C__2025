@@ -10,7 +10,6 @@ public class LinearCandleController : MonoBehaviour
     public float sensitivity = 0.1f;
     public Transform pinhole;
     public Transform screen;
-    public float realHeight = 1.0f;
     public Transform imageCandle;
 
     private Vector3 _axisOrigin;
@@ -42,7 +41,7 @@ public class LinearCandleController : MonoBehaviour
     {
         float u = Vector3.Distance(transform.position, pinhole.position);
         float v = Vector3.Distance(pinhole.position, screen.position);
-        float scaleFactor = u / v;
-        imageCandle.localScale = _originalImageSize * (scaleFactor * realHeight);
+        float scaleFactor = v / u;
+        imageCandle.localScale = _originalImageSize * scaleFactor;
     }
 }
