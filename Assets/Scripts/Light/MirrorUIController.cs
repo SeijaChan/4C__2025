@@ -6,68 +6,46 @@ using UnityEngine.UI;
 
 public class MirrorUIController : MonoBehaviour
 {
-    public Transform mirror;
-    
-    public Slider tiltSlider;
-    public Slider panSlider;
-    public LineRenderer lightRay;
-    public Button ResetButton;
-    public GameObject focusIndicator;
-    
-    public Transform sunDirection;
-    public Transform focalPoint;
+    public Slider rotationSlider;
+    public Text infoText;
+    public GameObject lightInScene;
+    public GameObject lightRay;
+    public GameObject focalPoint;
+    public GameObject mirror;
+    public GameObject button;
+    public bool canControl;
+    public float sensitivity;
 
-    private Vector3 _initialEulerAngles;
+    private int _trigger;
 
-    private void Start()
+    public void OnButtonClick()
     {
-        _initialEulerAngles = mirror.eulerAngles;
-
-        tiltSlider.onValueChanged.AddListener(AdjustTilt);
-        panSlider.onValueChanged.AddListener(AdjustPan);
-        ResetButton.onClick.AddListener(ResetPosition);
+        _trigger++;
+        switch (_trigger)
+        {
+            case 1: 
+                lightInScene.SetActive(true); 
+                lightRay.SetActive(true); 
+                focalPoint.SetActive(true); 
+                infoText.text = "阳燧取火：凹面镜可将阳光聚焦于焦点处产生高温";
+                break;
+            case 2:
+                lightInScene.SetActive(false);
+                infoText.text = "开始实验，左右方向键控制阳燧左右移动，滑动条控制阳燧旋转角度";
+                break;
+            case 3:
+                button.SetActive(false);
+                canControl = true;
+                rotationSlider.gameObject.SetActive(true);
+                break;
+        }
     }
 
     private void Update()
     {
-        UpdateLightRay();
-    }
-
-    private void AdjustTilt(float angle)
-    {
-        Vector3 angles = mirror.eulerAngles;
-        mirror.eulerAngles = new Vector3(angle, angles.y, angles.x);
-    }
-
-    private void AdjustPan(float angle)
-    {
-        Vector3 angles = mirror.eulerAngles;
-        mirror.eulerAngles = new Vector3(angles.x, angle, angles.z);
-    }
-
-    private void UpdateLightRay()
-    {
-        focusIndicator.SetActive(lightRay.enabled);
-        if (lightRay.enabled)
+        if (canControl)
         {
-            focusIndicator.transform.position = focalPoint.position;
+            mirror.transform.rotation = Quaternion.Euler(0, 0, 90 + rotationSlider.value * sensitivity);
         }
-        float pulse = Mathf.PingPong(Time.time, 1f);
-        lightRay.startWidth = 0.1f + pulse * 0.05f;
-        lightRay.endWidth = 0.05f + pulse * 0.03f;
-        bool isValid = Vector3.Angle(mirror.forward, -sunDirection.forward) < 5f;
-        lightRay.enabled = isValid;
-        if (isValid)
-        {
-            lightRay.SetPosition(0, mirror.position);
-            lightRay.SetPosition(1, focalPoint.position);
-        }
-    }
-
-    private void ResetPosition()
-    {
-        mirror.eulerAngles = _initialEulerAngles;
-        tiltSlider.value = _initialEulerAngles.x;
-        panSlider.value = _initialEulerAngles.y;
     }
 }
