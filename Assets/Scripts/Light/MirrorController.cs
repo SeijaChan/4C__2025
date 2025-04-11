@@ -11,11 +11,8 @@ public class MirrorController : MonoBehaviour
     public MirrorUIController mirrorUI;
     
     private void Update()
-    {   
-        if(mirrorUI.canControl)
-        {
-            Move();
-        }
+    { 
+        Move();
     }
 
     private void Move()
