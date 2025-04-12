@@ -105,5 +105,11 @@ public class UI_Manager : MonoBehaviour
 
         material.SetFloat("_gray", value);
     }
+
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
 
