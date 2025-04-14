@@ -486,7 +486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &349833553
 Transform:
   m_ObjectHideFlags: 0
@@ -2429,8 +2429,7 @@ MonoBehaviour:
   button: {fileID: 1239582371}
   canControl: 0
   sensitivity: 30
-  minAngle: 0
-  maxAngle: 0
+  minValue: 0.6
 --- !u!1 &1850906883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,7 +2726,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652260040124}
-  - component: {fileID: 919132148321593095}
   m_Layer: 0
   m_Name: Yangsui
   m_TagString: Untagged
@@ -2735,21 +2733,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &919132148321593095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148321593094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86092d87d2d61457098cf044d5582026, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _horizon: 0
-  sensitivity: 4
-  mirrorUI: {fileID: 1813495040}
 --- !u!33 &960175986089253035
 MeshFilter:
   m_ObjectHideFlags: 0
