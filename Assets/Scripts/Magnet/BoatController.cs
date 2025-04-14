@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BoatController : MonoBehaviour
@@ -26,11 +27,29 @@ public class BoatController : MonoBehaviour
     private float currentOffset;
     public GameObject Panel;
 
+    [Header("磁偏角轨迹")]
+    public LineRenderer pathRenderer;
+    public int maxPoints = 50;       // 最大轨迹点数
+    public float pointSpacing = 0.5f; // 点间距
+    public Color pathColor = new Color(0.4f, 0.6f, 1f, 0.8f); // 浅蓝色
+
+    private Queue<Vector3> pathPoints = new Queue<Vector3>();
+    private Vector3 lastRecordedPosition;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         ConfigureParticles();
         Panel.gameObject.SetActive(false);
+
+        if (pathRenderer != null)
+        {
+            pathRenderer.startWidth = 0.3f;
+            pathRenderer.endWidth = 0.1f;
+            pathRenderer.material = new Material(Shader.Find("Particles/Standard Unlit"));
+            pathRenderer.material.SetColor("_TintColor", pathColor);
+            pathRenderer.positionCount = 0;
+        }
 
     }
 
@@ -38,6 +57,7 @@ public class BoatController : MonoBehaviour
     {
         GetInput();
         UpdateWakeEffect();
+        UpdatePathVisualization();
     }
 
     void FixedUpdate()
@@ -132,5 +152,50 @@ public class BoatController : MonoBehaviour
             Gizmos.color = Color.blue;
             Gizmos.DrawLine(transform.position, transform.position + (Vector3)rb.velocity);
         }
+    }
+    void UpdatePathVisualization()
+    {
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        {
+            // 基于磁偏角计算预测偏移
+            Vector3 predictedOffset = transform.right * currentOffset * 2f;
+
+            // 动态添加轨迹点
+            if (Vector3.Distance(transform.position, lastRecordedPosition) > pointSpacing)
+            {
+                pathPoints.Enqueue(transform.position + predictedOffset);
+                lastRecordedPosition = transform.position;
+
+                // 保持队列长度
+                if (pathPoints.Count > maxPoints)
+                    pathPoints.Dequeue();
+
+                UpdateLineRenderer();
+            }
+        }
+        else
+        {
+            ClearPath();
+        }
+    }
+
+    void UpdateLineRenderer()
+    {
+        pathRenderer.positionCount = pathPoints.Count;
+        pathRenderer.SetPositions(pathPoints.ToArray());
+
+        // 添加动态渐隐效果
+        Gradient gradient = new Gradient();
+        gradient.SetKeys(
+            new GradientColorKey[] { new(pathColor, 0), new(pathColor, 1) },
+            new GradientAlphaKey[] { new(0.8f, 0), new(0.2f, 1) }
+        );
+        pathRenderer.colorGradient = gradient;
+    }
+
+    void ClearPath()
+    {
+        pathPoints.Clear();
+        pathRenderer.positionCount = 0;
     }
 }
