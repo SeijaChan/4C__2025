@@ -232,7 +232,7 @@ Transform:
   m_GameObject: {fileID: 29918511}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.7, y: -0, z: 0}
+  m_LocalPosition: {x: -14.1, y: 0, z: 0}
   m_LocalScale: {x: 9194, y: 39.78475, z: 39.78475}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -527,7 +527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &352097878
 Transform:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ Transform:
   m_GameObject: {fileID: 691250447}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.7, y: -0, z: 0}
+  m_LocalPosition: {x: -27.4, y: 0, z: 0}
   m_LocalScale: {x: 9194, y: 39.78475, z: 39.78475}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -978,7 +978,7 @@ Transform:
   m_GameObject: {fileID: 699466014}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.7, y: -0, z: 0}
+  m_LocalPosition: {x: -6.6, y: 0, z: 0}
   m_LocalScale: {x: 9194, y: 39.78475, z: 39.78475}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1260,7 +1260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &889075986
 Transform:
   m_ObjectHideFlags: 0
@@ -1601,7 +1601,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1805,7 +1805,7 @@ Transform:
   m_GameObject: {fileID: 1366327058}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 75.7, y: -0, z: 0}
+  m_LocalPosition: {x: -15.9, y: 0, z: 0}
   m_LocalScale: {x: 9194, y: 39.78475, z: 39.78475}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2429,6 +2429,8 @@ MonoBehaviour:
   button: {fileID: 1239582371}
   canControl: 0
   sensitivity: 30
+  minAngle: 0
+  maxAngle: 0
 --- !u!1 &1850906883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,6 +2747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86092d87d2d61457098cf044d5582026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _horizon: 0
   sensitivity: 4
   mirrorUI: {fileID: 1813495040}
 --- !u!33 &960175986089253035
@@ -2992,6 +2995,7 @@ GameObject:
   - component: {fileID: 8386368258911959731}
   - component: {fileID: 7731677770406289885}
   - component: {fileID: 2878033126236516753}
+  - component: {fileID: 8386368258911959732}
   m_Layer: 0
   m_Name: CandleStand
   m_TagString: Untagged
@@ -4131,8 +4135,22 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5311321449514159622}
+  - {fileID: 9095195728887315351}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8386368258911959732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585219212130052391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f8b941481eb489bbb1e40675e62393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &8463232366021321005
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,12 +4312,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8463232366021321005}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.6826688, y: 0.18429153, z: 0.18429153, w: 0.6826688}
-  m_LocalPosition: {x: -6.97, y: -0.063, z: 1}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalRotation: {x: 0.00000008940697, y: -0.000000029802322, z: 0.26062757, w: 0.96543944}
+  m_LocalPosition: {x: 0, y: 0, z: 0.005737781}
+  m_LocalScale: {x: 0.011582118, y: 0.011582119, z: 0.011582118}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 8386368258911959731}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -689.785}
 --- !u!95 &9095195728887315352
 Animator:
@@ -4486,4 +4504,3 @@ SceneRoots:
   - {fileID: 8386368258911959731}
   - {fileID: 1813495039}
   - {fileID: 349833553}
-  - {fileID: 9095195728887315351}
