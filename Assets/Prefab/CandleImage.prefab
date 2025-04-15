@@ -452,6 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 4855811585061538706}
+  hole: {fileID: 3706540994116752102}
 --- !u!120 &2431014741499306797
 LineRenderer:
   serializedVersion: 2
@@ -496,6 +497,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
@@ -1217,6 +1219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 2197217851318173345}
+  hole: {fileID: 3706540994116752102}
 --- !u!120 &3409078869623477080
 LineRenderer:
   serializedVersion: 2
@@ -1261,6 +1264,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
