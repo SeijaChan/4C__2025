@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
-    private static readonly int Enter = Animator.StringToHash("Enter");
-    private static readonly int Exit = Animator.StringToHash("Exit");
     private Animator _animator;
     private float _timer;
     private bool _isFire;
@@ -28,7 +26,7 @@ public class Fire : MonoBehaviour
         if (other.CompareTag("Light"))
         {
             _isFire = true;
-            _animator.SetTrigger(Enter);
+            _animator.SetTrigger("Enter");
         }
     }
 
@@ -39,7 +37,7 @@ public class Fire : MonoBehaviour
             _isFire = false;
             if(_timer < 2)
             {
-                _animator.SetTrigger(Exit);
+                _animator.SetTrigger("Exit");
             }
             _timer = 0;
         }
