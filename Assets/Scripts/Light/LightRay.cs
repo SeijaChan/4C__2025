@@ -7,6 +7,7 @@ public class LightRay : MonoBehaviour
 {
     private LineRenderer _lineRenderer;
     public GameObject endPoint;
+    public GameObject hole;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class LightRay : MonoBehaviour
     private void Update()
     {
         _lineRenderer.SetPosition(0,transform.position);
-        _lineRenderer.SetPosition(1, endPoint.transform.position);
+        _lineRenderer.SetPosition(1, hole.transform.position);
+        _lineRenderer.SetPosition(2, endPoint.transform.position);
     }
 }

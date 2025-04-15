@@ -43,7 +43,7 @@ public class MirrorUIController : MonoBehaviour
         if (canControl)
         {
             mirror.transform.rotation = Quaternion.Euler(0, 0, 90 - rotationSlider.value * sensitivity);
-            if (rotationSlider.value > minValue && rotationSlider.value < 1)
+            if (rotationSlider.value > minValue)
             {
                 lightRay.SetActive(true);
                 focalPoint.SetActive(true); 
