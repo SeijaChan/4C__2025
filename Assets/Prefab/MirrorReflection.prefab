@@ -1293,7 +1293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1906773432838292343
 Transform:
   m_ObjectHideFlags: 0
@@ -1337,7 +1337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3658310769250967537, guid: 3d79fb1a539a6459193ba7eb63056f3f, type: 3}
+  - {fileID: 2100000, guid: 6e59968d9bd634ae6a727ed7ac9efe98, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1600,7 +1600,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 838b14a8fb7564049bd8878b725e499b, type: 2}
+  - {fileID: 2100000, guid: ded006fec6d0140d2bb6b34a78a6eb14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4025,8 +4025,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.0050006397
-  m_Center: {x: -1.1642133e-10, y: 0.000000034808174, z: 0.0000006346963}
+  m_Radius: 0.03
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8251610209196681971
 MonoBehaviour:
   m_ObjectHideFlags: 0
