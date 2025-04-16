@@ -15,7 +15,7 @@ public class MirrorUIController : MonoBehaviour
     public GameObject button;
     public bool canControl;
     public float sensitivity;
-
+    public float minValue;
     private int _trigger;
 
     public void OnButtonClick()
@@ -24,13 +24,10 @@ public class MirrorUIController : MonoBehaviour
         switch (_trigger)
         {
             case 1: 
-                lightInScene.SetActive(true); 
-                lightRay.SetActive(true); 
-                focalPoint.SetActive(true); 
                 infoText.text = "阳燧取火：凹面镜可将阳光聚焦于焦点处产生高温";
                 break;
             case 2:
-                lightInScene.SetActive(false);
+                lightInScene.SetActive(true);
                 infoText.text = "开始实验，左右方向键控制阳燧左右移动，滑动条控制阳燧旋转角度";
                 break;
             case 3:
@@ -45,7 +42,17 @@ public class MirrorUIController : MonoBehaviour
     {
         if (canControl)
         {
-            mirror.transform.rotation = Quaternion.Euler(0, 0, 90 + rotationSlider.value * sensitivity);
+            mirror.transform.rotation = Quaternion.Euler(0, 0, 90 - rotationSlider.value * sensitivity);
+            if (rotationSlider.value > minValue)
+            {
+                lightRay.SetActive(true);
+                focalPoint.SetActive(true); 
+            }
+            else
+            {
+                lightRay.SetActive(false);
+                focalPoint.SetActive(false);
+            }
         }
     }
 }
