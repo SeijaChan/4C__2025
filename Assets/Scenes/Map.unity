@@ -2455,6 +2455,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6587405774956300484, guid: 190358349c14b0f4c9848b8aa4dc461f, type: 3}
   m_PrefabInstance: {fileID: 232820407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &236255267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 236255268}
+  - component: {fileID: 236255270}
+  - component: {fileID: 236255269}
+  m_Layer: 5
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &236255268
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236255267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1779337368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000015259, y: -7.9797}
+  m_SizeDelta: {x: 1920, y: 1095.9595}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &236255269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236255267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8ae35781328be624b9099e9f8296eb22, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &236255270
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236255267}
+  m_CullTransparentMesh: 1
 --- !u!1001 &242324501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4335,7 +4410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8160282208567599732, guid: 94f518733ad650149ac45d769f721e3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0963795
+      value: 3.37
       objectReference: {fileID: 0}
     - target: {fileID: 8160282208567599732, guid: 94f518733ad650149ac45d769f721e3c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4343,7 +4418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8160282208567599732, guid: 94f518733ad650149ac45d769f721e3c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.551575
+      value: -12.59
       objectReference: {fileID: 0}
     - target: {fileID: 8160282208567599732, guid: 94f518733ad650149ac45d769f721e3c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4395,6 +4470,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2436330676504779577, guid: 94f518733ad650149ac45d769f721e3c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 818577254}
+    - targetCorrespondingSourceObject: {fileID: 2436330676504779577, guid: 94f518733ad650149ac45d769f721e3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 818577256}
   m_SourcePrefab: {fileID: 100100000, guid: 94f518733ad650149ac45d769f721e3c, type: 3}
 --- !u!1001 &409052093
 PrefabInstance:
@@ -5270,6 +5348,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1685111207698798775, guid: fa9e5270527c5334c8464724c2deda7d, type: 3}
   m_PrefabInstance: {fileID: 475422587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &481025621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481025622}
+  - component: {fileID: 481025624}
+  - component: {fileID: 481025623}
+  m_Layer: 5
+  m_Name: BookGet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &481025622
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481025621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1779337368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 158}
+  m_SizeDelta: {x: 624.7498, y: 270.1726}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &481025623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481025621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9480462, g: 0.9622642, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 009fa21b35f660b4a8378fdf69be49b5, type: 3}
+    m_FontSize: 60
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 60
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u83B7 \u5F97 \u4E86 \u624B \u518C \uFF01"
+--- !u!222 &481025624
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481025621}
+  m_CullTransparentMesh: 1
 --- !u!1001 &485256043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6825,6 +6982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 597260303}
+  - component: {fileID: 597260304}
   m_Layer: 7
   m_Name: Asset
   m_TagString: Ground
@@ -7079,6 +7237,22 @@ Transform:
   - {fileID: 780231553}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &597260304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597260302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Asset
+  _portrait: {fileID: 0}
+  _dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+  _dialogueOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &605062060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7471,6 +7645,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 66893520490893373, guid: 84198595bf11eca45835b07756354581, type: 3}
   m_PrefabInstance: {fileID: 632193834}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &636502119
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1779337368}
+    m_Modifications:
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395622042714953049, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_Name
+      value: Book_UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395622042714953049, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867242810340876371, guid: e92763415269db7468dd4d498ef42884, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1779337367}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e92763415269db7468dd4d498ef42884, type: 3}
 --- !u!1001 &642437601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9709,7 +9988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: ShenKuo
   _portrait: {fileID: 0}
-  _dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+  _dialogueColor: {r: 0, g: 0, b: 0, a: 1}
   _dialogueOffset: {x: 0, y: 0, z: 0}
 --- !u!65 &818577251
 BoxCollider:
@@ -9788,22 +10067,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
   _serializedBlackboard: '{"_variables":{"isAvailable":{"_name":"isAvailable","_id":"fe3cd7d4-a8d0-4aed-bfd2-b825c79eb03d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"task1Finished":{"_name":"task1Finished","_id":"b8b721f0-c6ee-4d7b-8161-3e8aa6675189","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"task2Finished":{"_name":"task2Finished","_id":"25f161c3-c994-4dd9-a57a-2c655c0b5432","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"task3Finished":{"_name":"task3Finished","_id":"e5e3630d-01bb-48bb-b300-921c9e9abafd","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"isBookGot":{"_name":"isBookGot","_id":"b8b721f0-c6ee-4d7b-8161-3e8aa6675189","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"isTaskFinished":{"_name":"isTaskFinished","_id":"25f161c3-c994-4dd9-a57a-2c655c0b5432","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"isEnded":{"_name":"isEnded","_id":"e5e3630d-01bb-48bb-b300-921c9e9abafd","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
   _serializedVariables:
   - _json: '{"_name":"isAvailable","_id":"fe3cd7d4-a8d0-4aed-bfd2-b825c79eb03d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_name":"task1Finished","_id":"b8b721f0-c6ee-4d7b-8161-3e8aa6675189","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+  - _json: '{"_name":"isBookGot","_id":"b8b721f0-c6ee-4d7b-8161-3e8aa6675189","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_name":"task2Finished","_id":"25f161c3-c994-4dd9-a57a-2c655c0b5432","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+  - _json: '{"_name":"isTaskFinished","_id":"25f161c3-c994-4dd9-a57a-2c655c0b5432","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_name":"task3Finished","_id":"e5e3630d-01bb-48bb-b300-921c9e9abafd","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+  - _json: '{"_name":"isEnded","_id":"e5e3630d-01bb-48bb-b300-921c9e9abafd","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!114 &818577255
@@ -9819,13 +10098,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"_condition":{"valueA":{"_name":"isAvailable","_targetVariableID":"fe3cd7d4-a8d0-4aed-bfd2-b825c79eb03d"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_position":{"x":386.4,"y":88.00001},"$type":"NodeCanvas.DialogueTrees.ConditionNode"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"actorParameters":[],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
-  _boundGraphObjectReferences: []
+  _boundGraphSerialization: '{"type":"NodeCanvas.DialogueTrees.DialogueTree","nodes":[{"_condition":{"valueA":{"_name":"isAvailable","_targetVariableID":"fe3cd7d4-a8d0-4aed-bfd2-b825c79eb03d"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_UID":"6a342264-3fa4-43a3-9f5f-8f65cb2e4527","_position":{"x":404.8,"y":87.20001},"$type":"NodeCanvas.DialogueTrees.ConditionNode","$id":"0"},{"_condition":{"valueA":{"_name":"isTaskFinished","_targetVariableID":"25f161c3-c994-4dd9-a57a-2c655c0b5432"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_UID":"3b02a74e-6ba5-4c75-ba95-64cbff4ebc61","_position":{"x":378.9134,"y":247.9949},"$type":"NodeCanvas.DialogueTrees.ConditionNode","$id":"1"},{"statement":{"_text":"\uff1f\uff1f\uff1f\uff1a\n\"\u6b64\u5904\u4e43\u79c1\u4eba\u56ed\u6797\uff0c\u9601\u4e0b\u4f55\u4eba\uff1f\u4e3a\u4f55\u64c5\u95ef\u68a6\u6eaa\u56ed\uff1f\""},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"4d07a27e-cb63-4bda-b443-892efd701446","_position":{"x":62.58572,"y":422.0521},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"2"},{"statement":{"_text":"\u6211\uff1a\n\uff08\u68a6\u6eaa\u56ed\uff1f\u96be\u9053\u773c\u524d\u7684\u4eba,\u662f\u6c88\u62ec\u5148\u751f\uff01\uff1f\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"16500e32-23d8-461b-8b87-279f63100c1f","_position":{"x":77.42974,"y":530.1728},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"3"},{"statement":{"_text":"\u6211\uff1a\n\u201c\u6c88...\u6c88\u516c\uff1f\u201d"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"64dc31e7-b8f9-423f-9305-2d4c41b726c9","_position":{"x":152.2643,"y":637.869},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"4"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\"\u9601\u4e0b\u8ba4\u5f97\u6c88\u67d0\uff1f\""},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"20c44c42-251b-4520-b6e6-237790f82239","_position":{"x":146.6643,"y":756.269},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"5"},{"statement":{"_text":"\u6211\uff1a\n\uff08\u6211\uff0c\u6211\u7adf\u7136\u771f\u7684\u89c1\u5230\u6c88\u516c\u672c\u4eba\u4e86\uff1f\u4f55\u5176\u5e78\u8fd0\u554a\uff01\uff09"},"_UID":"be861d29-e647-4d0b-8fc5-cefd3d70120e","_position":{"x":57.06433,"y":854.6691},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"6"},{"statement":{"_text":"\u6211\uff1a\n\"\u665a\u751f\u4e45\u4ef0\u6c88\u516c\u5927\u540d\uff0c\u4eca\u65e5\u5f97\u89c1\uff0c\u4e09\u751f\u6709\u5e78\u3002\n\u65b9\u624d\u5728\u56ed\u4e2d\u8ff7\u8def\uff0c\u5192\u6627\u6253\u6270\uff0c\u8fd8\u671b\u6c88\u516c\u89c1\u8c05\u3002\""},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"c51117b1-77eb-4770-8696-5275f39c7730","_position":{"x":84.19998,"y":960.8},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"7"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201c\u4e0d\u6253\u7d27\uff0c\u6211\u8fd9\u68a6\u6eaa\u56ed\u4e2d\uff0c\u6ca1\u751a\u503c\u94b1\u4e4b\u7269\uff0c\n\u53ea\u6709\u7528\u6765\u8fdb\u884c\u7814\u7a76\u7684\u5668\u7269\u4e8c\u4e09\u800c\u5df2\uff01\u201d"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"2cb2fcd9-c5c8-4146-afbd-6dddb4f7d864","_position":{"x":87.40002,"y":1089.6},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"8"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201c\u9601\u4e0b\u65e2\u8a00\u7d20\u95fb\u543e\u540d\uff0c\n\u53ef\u542c\u8bf4\u8fc7\u543e\u6240\u8457\u4e4b\u300a\u68a6\u6eaa\u7b14\u8c08\u300b\uff1f\u201d"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"0f98d464-b24f-484b-b0df-170d70e8efc0","_position":{"x":121.2,"y":1214.0},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"9"},{"statement":{"_text":"\u6211\uff1a\n\u201c\u90a3\u662f\u81ea\u7136\uff01\n\u665a\u751f\u5c24\u7231\u6b64\u5947\u4e66\uff0c\u53cd\u590d\u54c1\u5473\u7814\u8bfb\u5341\u6570\u6b21\u3002\n\u4eca\u65e5\u5f97\u89c1\uff0c\u679c\u662f\u5341\u5206\u60ca\u559c\u3002\u201c"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"0ed6d3aa-edc8-4887-870a-d7239757d805","_position":{"x":90.99997,"y":1341.0},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"10"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201d\u5584\u54c9\u5584\u54c9\uff0c\n\u82e5\u662f\u4e0d\u5acc\u7c97\u964b\uff0c\u56ed\u4e2d\u5668\u7269\u968f\u541b\u81ea\u7531\u4f7f\u7528\u3002\u201c"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"ae5b13c9-0006-4c1a-9cb3-3ba2d22aee36","_position":{"x":84.60001,"y":1459.4},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"11"},{"statement":{"_text":"\u6211\uff1a\n\u201d\u4e0d\u80dc\u611f\u6fc0\uff0c\n\u90a3\u665a\u751f\u5c31\u6682\u65f6\u544a\u522b\u4e86\u201c"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"0341e991-9c28-4d99-a590-94638ac04f54","_position":{"x":139.2,"y":1579.4},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"12"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201d\u5475\u5475\u5475\uff0c\u83ab\u6025\u83ab\u6025\uff0c\n\u543e\u53e6\u6709\u624b\u518c\u4e00\u90e8\u8d60\u4e0e\u541b\uff0c\u671b\u5176\u80fd\u52a9\u541b\u52a0\u6df1\u7406\u89e3\u3002\u201c"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"9008ecca-2608-485f-828d-65c4157ce807","_position":{"x":123.2,"y":1701.0},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"13"},{"_action":{"boolVariable":{"_name":"isBookGot","_targetVariableID":"b8b721f0-c6ee-4d7b-8161-3e8aa6675189"},"$type":"NodeCanvas.Tasks.Actions.SetBoolean"},"_UID":"b6085bfa-9db4-4fd7-806b-28292e1559b9","_position":{"x":-136.5374,"y":1783.6},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"14"},{"statement":{"_text":"\u6211\uff1a\n\uff08\u53cc\u624b\u62b1\u62f3\u63d6\u522b\u6c88\u62ec\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"1e28ee82-4dfd-40a9-8407-a53695b45d45","_position":{"x":148.0,"y":1827.4},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"15"},{"statement":{"_text":"\uff08\u63a5\u4e0b\u6765\u5c31\u5148\u53bb\u63a2\u7d22\u63a2\u7d22\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"66683068-4548-4138-9f26-5143310fd52a","_position":{"x":141.2433,"y":1986.258},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"16"},{"_UID":"51a74d35-8059-4ae9-949d-2b2c3bd05e15","_position":{"x":759.5071,"y":4433.793},"$type":"NodeCanvas.DialogueTrees.FinishNode","$id":"17"},{"statement":{"_text":"\u6211\uff1a\n\u201c\u6c88\u516c\uff0c\u68a6\u6eaa\u56ed\u4e2d\u6240\u6709\u5668\u7269\u7686\u5df2\u63a2\u7d22\u5b8c\u6bd5\n\u665a\u751f\u53d7\u76ca\u532a\u6d45\uff0c\u53d7\u76ca\u532a\u6d45\u554a\u3002\u201d"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"93fd365f-e32e-4ce4-a733-29b38521712c","_position":{"x":580.5786,"y":382.9153},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"18"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201c\u65e2\u7136\u5982\u6b64\uff0c\n\u90a3\u543e\u53ef\u8981\u8bd5\u8bd5\u541b\u662f\u5426\u771f\u7684\u7406\u89e3\u4e86\u3002\u201d"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"2a851e7c-02ef-482c-ad5a-6c24fcf3153a","_position":{"x":597.3483,"y":502.2442},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"19"},{"statement":{"_text":"\u6211\uff1a\n\u201c\u665a\u751f\u6d17\u8033\u606d\u542c\uff01\u201d"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"57e69b4b-387a-4833-8119-846d542d748d","_position":{"x":637.89,"y":637.7089},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"20"},{"statement":{"_text":"\u95ee\u7b54\uff1a\u56de\u5fc6\u4e4b\u524d\u7684\u9633\u71e7\u70b9\u706b\u8bd5\u9a8c\uff0c\u4f60\u53ef\u8fd8\u8bb0\u5f97\u5176\u4e2d\u539f\u7406\uff1f\u8bf7\u542c\u9898\u2014\u2014\n\u9898\u76ee\uff1a
+    \u9633\u71e7\u5f15\u71c3\u8349\u6728\u7684\u6838\u5fc3\u539f\u7406\u662f\uff1f"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"cae1801b-6f07-469e-9a4e-84d4018cbf32","_position":{"x":522.1621,"y":750.3878},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"21"},{"availableChoices":[{"isUnfolded":false,"statement":{"_text":"
+    \u51f9\u9762\u955c\u6c47\u805a\u5149\u7ebf\u4e8e\u7126\u70b9"}},{"isUnfolded":false,"statement":{"_text":"\u5e73\u9762\u955c\u53cd\u5c04\u65e5\u5149\u5347\u6e29"}},{"isUnfolded":false,"statement":{"_text":"\u9752\u94dc\u6750\u8d28\u81ea\u8eab\u84c4\u70ed"}},{"isUnfolded":false,"statement":{"_text":"
+    \u5c0f\u5b54\u6210\u50cf\u5f62\u6210\u9ad8\u6e29\u5149\u6591"}}],"_actorName":"\u9009\u62e91","_actorParameterID":"e66a4457-92de-407b-98fa-64472a957f9f","_UID":"01cba888-0218-47f6-90e6-0bb4e0ead512","_position":{"x":649.8544,"y":859.4296},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"22"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u5999\u554a\uff01\u4f60\u65e2\u70b9\u706b\u5b8c\u6210\uff0c\u60f3\u5fc5\u5bf9\u9633\u71e7\u2019\u5149\u805a\u4e3a\u70b9\uff0c\u7126\u800c\u751f\u7130''\u7684\u7269\u7406\u6027\u8d28\u6709\u4e86\u66f4\u6df1\u5165\u7684\u4e86\u89e3\u3002\n\u800c\u65b9\u624d\u4f60\u8c03\u63a7\u955c\u9762\u7684\u8fc7\u7a0b\uff0c\u4e5f\u53cd\u6620\u4e86\u5728\u7269\u7406\u5b66\u5b66\u4e60\u4e2d\u4e25\u8c28\u6001\u5ea6\u7684\u91cd\u8981\u6027\uff0c\n\u4f60\u5f53\u8bb0\u4f4f\uff1a\u683c\u7269\u4e4b\u9053\uff0c\u6b63\u5728\u8fd9\u6beb\u5398\u5206\u5bf8\u95f4\u7684\u7cbe\u5fae\u628a\u63a7\u3002"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"24dea12d-409c-48ce-8b77-e3c176ef36d4","_position":{"x":409.2123,"y":1143.462},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"23"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201d\u518d\u542c\u9898\uff0c\u78c1\u9488\u5e38\u5fae\u504f\u4e1c\u800c\u975e\u76f4\u6307\u5357\u6781\uff0c\u6b64\u73b0\u8c61\u79f0\u4e3a\uff1f\""},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"f3f71707-5dd1-4f23-89e9-15af4820d6ab","_position":{"x":436.2278,"y":1276.093},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"24"},{"availableChoices":[{"statement":{"_text":"\u5730\u78c1\u504f\u89d2"}},{"statement":{"_text":"\u661f\u8c61\u5e72\u6270"}},{"statement":{"_text":"\u5de5\u5320\u8bef\u5dee"}},{"statement":{"_text":"\u91d1\u5c5e\u5e72\u6270"}}],"_UID":"40087b11-8e15-4eef-8d0e-01e809867a96","_position":{"x":698.6275,"y":1412.158},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"25"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\"\u78c1\u9488\u504f\u5dee\u6b63\u5982\u6708\u6709\u6714\u671b\u3001\u6f6e\u6709\u6da8\u843d\u3002\u4e16\u4eba\u6c42\u51c6\uff0c\u800c\u5929\u9053\u8d35\u8861\u3002\u8fd9\u6beb\u5398\u4e4b\u504f\uff0c\u6070\u662f\u4e7e\u5764\u547c\u5438\u4e4b\u8ff9\uff01\""},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"16b5f8b0-09a2-47b8-b2bd-073c4be14f2e","_position":{"x":584.0731,"y":1689.775},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"26"},{"statement":{"_text":"\u6211\uff1a\n\uff08\u8001\u7956\u5b97\u771f\u662f\u6709\u5927\u667a\u6167\uff0c\u7adf\u7136\u8fde\u5730\u78c1\u504f\u89d2\u90fd\u80fd\u53d1\u73b0\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"403eade2-8989-4abc-898c-eca87f4a7439","_position":{"x":587.5223,"y":1825.47},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"27"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\"\u53e4\u6cd5\u6709\u4e91\uff0c\u949f\u78ec\u6210\u5217\uff0c\u4e00\u67b6\u5341\u516d\uff0c\u6697\u5408\u5929\u5730\u5341\u516d\u5f8b\u3002\u7136\u6bcf\u67b6\u4e50\u5668\u4ea6\u85cf\u7384\u673a\uff0c\u5982\u9ec4\u949f\u4e4b\u8661\u6d51\u539a\u5e84\u91cd\uff0c\u5927\u5415\u4e4b\u8661\u6e05\u8d8a\u60a0\u626c\uff0c\u5404\u5177\u98ce\u9aa8\u3002\"\n"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"3ac691e1-6824-45e3-a7b9-536c89bb7d4b","_position":{"x":586.1085,"y":1937.097},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"28"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\"\u7434\u745f\u672c\u662f\u6728\u77f3\u6240\u5236\uff0c\u5374\u80fd\u6f14\u7ece\u4e07\u5343\u97f3\u8272\u3002\u89c2\u5176\u6750\uff0c\u9690\u542b\u4e94\u97f3\u4e4b\u9053\uff1b\u542c\u5176\u97f5\uff0c\u53ef\u5e94\u516d\u5f8b\u4e4b\u53d8\u3002\u6545\u6709\u6e05\u5fb5\u3001\u6e05\u89d2\u4e4b\u540d\u7434\uff0c\u4e0d\u62d8\u6ce5\u4e8e\u4e94\u97f3\uff0c\u66f4\u80fd\u901a\u6653\u5929\u4e0b\u8c03\u5f0f\u3002\""},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"0a8223ff-0e64-4303-84a8-0b008778d013","_position":{"x":591.9645,"y":2038.277},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"29"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\"\u518d\u770b\u90a3\u7435\u7436\uff0c\u9759\u7f6e\u7a7a\u5ba4\u4e4b\u4e2d\uff0c\u82e5\u4ee5\u7ba1\u8272\u594f\u53cc\u8c03\uff0c\u56db\u5f26\u5e94\u58f0\u800c\u8d77\uff0c\u5982\u6cc9\u6d8c\u77f3\u4e0a\uff1b\u6362\u4ed6\u8c03\u5219\u5bc2\u7136\u65e0\u58f0\uff0c\u4f3c\u6c89\u7761\u6df1\u6f6d\u3002\u4e16\u4eba\u60ca\u4e3a\u5f02\u4e8b\uff0c\u5b9e\u5219\u9634\u9633\u5171\u9e23\u4e4b\u7406\u4e5f\u3002\""},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"b9e816cc-7bf7-440c-9795-dad1d479429a","_position":{"x":592.6415,"y":2131.251},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"30"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201c\u4ee5\u53ca\u949f\u78ec\u6572\u54cd\uff0c\u5176\u56db\u5468\u4ea6\u9e23\uff0c\u4e0a\u8ff0\u73b0\u8c61\u6b64\u4f55\u539f\u56e0\u6240\u81f4\uff1f"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"fcbcdd38-2f7c-4d93-a3a3-159c7e8c806e","_position":{"x":680.6268,"y":2232.572},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"31"},{"availableChoices":[{"statement":{"_text":"\u7b2c\u4e00\u4e2a\u97f3\u53c9\u7684\u632f\u52a8\u901a\u8fc7\u7a7a\u6c14\u4f20\u64ad\uff0c\u5f15\u8d77\u7b2c\u4e8c\u4e2a\u97f3\u53c9\u5171\u632f"}},{"statement":{"_text":"
+    \u7a7a\u6c14\u6d41\u52a8\u5e26\u52a8\u4e86\u7b2c\u4e8c\u4e2a\u97f3\u53c9\u632f\u52a8"}},{"statement":{"_text":"\u4e24\u4e2a\u97f3\u53c9\u4e4b\u95f4\u6709\u78c1\u6027\u5438\u5f15\u529b"}},{"statement":{"_text":"\u4e24\u4e2a\u97f3\u53c9\u4e4b\u95f4\u6709\u78c1\u6027\u5438\u5f15\u529b"}}],"_actorName":"\u9009\u62e92","_actorParameterID":"2a119955-47db-4b80-81b3-2d7b201c6b1a","_UID":"9dbe0aaa-8fbb-462a-be78-83766f3ac688","_position":{"x":669.4948,"y":2337.044},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"32"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201d\u5168\u90e8\u6b63\u786e\uff0c\u540e\u751f\u53ef\u754f\u3002\u540e\u751f\u53ef\u754f\u554a\uff01\u201c"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_position":{"x":775.2795,"y":2706.266},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"33"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201d\u8fd9\u4f4d\u540e\u751f\uff0c\n\u770b\u4f60\u5982\u6b64\u6709\u5929\u8d44\uff0c\u6562\u95ee\u53ef\u5426\u6709\u610f\u7559\u4e8e\u543e\u8eab\u8fb9\n\u52a9\u543e\u7814\u7a76\uff1f\u201c"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_position":{"x":783.6642,"y":2806.38},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"34"},{"statement":{"_text":"\u6211\uff1a\n\uff08\u7559\u5728\u6c88\u516c\u8eab\u8fb9\uff1f\u542c\u8d77\u6765\u4e0d\u9519\uff0c\u53ef\u662f.....\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_position":{"x":816.0088,"y":2928.098},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"35"},{"statement":{"_text":"(\u4f60\u7684\u53cc\u624b\u6e10\u6e10\u53d8\u5f97\u900f\u660e\uff0c\u662f\u68a6\u8981\u9192\u4e86\u5417\uff01\uff1f)"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_position":{"x":808.4641,"y":3033.37},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"36"},{"statement":{"_text":"\u6211\uff1a\n\"\u6c88\u516c\uff01\u65f6\u95f4\u4e0d\u591a\u4e86...\u6211...\u665a\u751f\u5176\u5b9e\u6765\u81ea\u4e5d\u767e\u5e74\u540e\u7684\u534e\u590f\u3002\""},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_position":{"x":816.3416,"y":3119.858},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"37"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\"\u679c\u7136\u5982\u6b64\u3002\n\u4e0e\u541b\u4ea4\u8c08\u65f6\u6240\u8a00\u2018\u5730\u5706\u5982\u5f39\u4e38\u2019\u3001\u2018\u78c1\u77f3\u6709\u5357\u5317\u6781\u2019\uff0c\n\u975e\u6d77\u5916\u4e4b\u8bf4\uff0c\u5b9e\u4e43\u540e\u4e16\u4e4b\u5b66\u5427\uff1f\""},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_position":{"x":832.9792,"y":3218.955},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"38"},{"statement":{"_text":"\u6211\uff1a\n\"\u6b63\u662f\uff01\n\u540e\u4e16\u5b50\u5b59\u7ad9\u5728\u60a8\u7684\u80a9\u4e0a\uff0c\u624d\u5f97\u4ee5\u7aa5\u89c1\u5929\u9053\u5965\u79d8\u3002\n\u60a8\u7684\u300a\u68a6\u6eaa\u7b14\u8c08\u300b...\u4f1a\u88ab\u79f0\u4f5c\u2018\u4e2d\u56fd\u79d1\u5b66\u53f2\u7684\u5750\u6807\u2019\uff01\""},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_position":{"x":817.1646,"y":3337.113},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"39"},{"statement":{"_text":"\u6c88\u62ec;\n\"\u6c88\u67d0\u4e00\u751f\u6240\u6c42\uff0c\u4e0d\u8fc7\u2018\u683c\u7269\u81f4\u77e5\u2019\u56db\u5b57\u3002\n\u65e2\u77e5\u534e\u590f\u540e\u5b66\u660c\u660e\uff0c\u6b7b\u800c\u65e0\u61be\u3002\""},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_position":{"x":828.009,"y":3454.593},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"40"},{"statement":{"_text":"(\u6c88\u62ec\u629a\u987b\u8f7b\u7b11\uff0c\u4f60\u5374\u5206\u660e\u770b\u5230\u4ed6\u773c\u4e2d\u5374\u6709\u706b\u5149\u8dc3\u52a8)"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_position":{"x":793.8945,"y":3570.266},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"41"},{"statement":{"_text":"\u6211\uff1a\n\u201d\"\u4e0d\uff0c\u60a8\u8be5\u4eb2\u773c\u770b\u770b\u2014\u2014\u770b\u770b\u9ad8\u94c1\u98de\u9a70\u5982\u9f99\uff0c\u770b\u770b\u2018\u5929\u95ee\u2019\u63a2\u706b\uff0c\u2018\u86df\u9f99\u2019\u5165\u6d77\uff01\n\u6211\u4eec...\u6211\u4eec\u7ec8\u4f1a\u8ba9\u8fd9\u795e\u5dde\u5927\u5730\uff0c\u518d\u73b0\u6c49\u5510\u6c14\u8c61\uff01\"\u201c"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_position":{"x":823.7164,"y":3661.539},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"42"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\u201d\u867d\u7136\u8001\u8eab\u4e0d\u61c2\u541b\u6240\u8ff0\u4f55\u7269\uff0c\u4f46\u4e5f\u80fd\u611f\u53d7\u5230\u5e76\u975e\u51e1\u7269\u3002\n\u53bb\u5427\uff01\u4ee3\u6c88\u67d0...\u770b\u770b\u90a3\u76db\u4e16\uff01\u201c"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_position":{"x":822.8126,"y":3764.56},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"43"},{"statement":{"_text":"\uff08\u88ab\u90a3\u5982\u6d2a\u949f\u822c\u7684\u58f0\u97f3\u9707\u64bc\uff0c\u4f60\u7acb\u4e8e\u539f\u5730\uff0c\u773c\u4e2d\u5659\u6ee1\u6cea\u6c34\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_position":{"x":806.772,"y":3872.777},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"44"},{"statement":{"_text":"\u6211\uff1a\n\u201d\u540e\u8f88\u5b66\u4eba\uff0c\u5b9a\u4e0d\u8d1f\u5148\u8d24\u6240\u6258\u2014\u2014\u4ee5\u7269\u7406\u4e4b\u706b\uff0c\u7167\u590d\u5174\u4e4b\u8def\uff01\""},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_position":{"x":816.7126,"y":3964.954},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"45"},{"_action":{"boolVariable":{"_name":"isEnded","_targetVariableID":"e5e3630d-01bb-48bb-b300-921c9e9abafd"},"$type":"NodeCanvas.Tasks.Actions.SetBoolean"},"_position":{"x":899.8524,"y":4076.785},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"46"},{"statement":{"_text":"\uff08\u4f60\u773c\u524d\u7684\u4e8b\u7269\u4e00\u4e00\u6d88\u6563\uff0c\u610f\u8bc6\u56de\u5230\u4e86\u73b0\u4ee3\u4e16\u754c\uff09"},"_position":{"x":823.0385,"y":4167.155},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"47"},{"statement":{"_text":"\u6211\uff1a\n\u201c\u6211\u5b9a\u4e0d\u4f1a\u8f9c\u8d1f\u6c88\u516c\u671f\u671b\uff0c\n\u6d88\u9664\u2018\u53e4\u4ee3\u4e2d\u56fd\u65e0\u7269\u7406\u2019\u4e4b\u504f\u89c1\uff0c\n\u5c06\u53e4\u4eba\u7684\u667a\u6167\uff0c\u6563\u64ad\u4e8e\u795e\u5dde\u5927\u5730\u7684\u6bcf\u4e00\u4e2a\u89d2\u843d\uff01\u201d"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_position":{"x":886.523,"y":4258.202},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"48"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"1fdaa666-36d0-4396-aeae-cc44c9d37dbb","_position":{"x":1154.701,"y":2516.035},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"49"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"101bb653-d076-4f64-97a4-bc44de0cd139","_position":{"x":1167.062,"y":2647.035},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"50"},{"_sourceNodeUID":"9dbe0aaa-8fbb-462a-be78-83766f3ac688","_UID":"78940037-5b85-423e-888f-55051f1a71b4","_position":{"x":1320.905,"y":2754.626},"$type":"NodeCanvas.DialogueTrees.Jumper","$id":"51"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"869d1f27-25d6-4b21-9d32-db94441bc5dc","_position":{"x":1348.492,"y":2525.75},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"52"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"a970a277-8af7-427d-87c1-6c2999cd47c6","_position":{"x":1358.191,"y":2646.104},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"53"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"2c6c4178-6b5c-4ccf-904a-80b58de490a3","_position":{"x":1558.762,"y":2515.104},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"54"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"79ff3425-a3d1-4abc-b3bc-0c127ad7c1f2","_position":{"x":1571.123,"y":2646.104},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"55"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"e53ee106-8462-400b-9727-e3e7f6345759","_position":{"x":912.5643,"y":1654.713},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"56"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"fbaf4153-58f6-41e8-89cb-72ff745d3444","_position":{"x":924.9255,"y":1785.713},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"57"},{"_sourceNodeUID":"40087b11-8e15-4eef-8d0e-01e809867a96","_UID":"395e6e1a-95ee-4667-ac53-0287ceab5c03","_position":{"x":1144.341,"y":1931.277},"$type":"NodeCanvas.DialogueTrees.Jumper","$id":"58"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"6d2af260-01b8-4bbc-a692-81604e1d2cb3","_position":{"x":1106.355,"y":1664.428},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"59"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"5c431b20-2e5a-4594-b96f-d25e0a818a9a","_position":{"x":1116.054,"y":1784.781},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"60"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"dc9b0125-0315-43d6-830c-ea2fe6be91fd","_position":{"x":1316.625,"y":1653.782},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"61"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"86a79938-3d26-4f38-99c2-431267b8e3a0","_position":{"x":1328.986,"y":1784.782},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"62"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"01ce3a53-3456-4c89-846c-0938660b5c19","_position":{"x":867.6433,"y":1099.0},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"63"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"51ddaf32-4099-4687-b38c-90eb46bfd60b","_position":{"x":880.0045,"y":1230.0},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"64"},{"_sourceNodeUID":"01cba888-0218-47f6-90e6-0bb4e0ead512","_UID":"ec360561-f06c-4f09-84b4-ca631f3c76b0","_position":{"x":1099.42,"y":1375.564},"$type":"NodeCanvas.DialogueTrees.Jumper","$id":"65"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"16f8215a-be3a-470f-8484-17de46e93cad","_position":{"x":1061.434,"y":1108.715},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"66"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"139c3ee1-055c-4461-839d-796126897296","_position":{"x":1071.133,"y":1229.068},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"67"},{"statement":{"_text":"\u6c88\u62ec\uff1a\n\uff08\u6447\u5934\u4ee5\u793a\u6709\u8bef\uff09"},"_actorName":"\u6c88\u62ec","_actorParameterID":"d8046779-39c0-4c29-bd4a-a562cff4010d","_UID":"835a1841-646f-4635-a2f4-1539c0a82e61","_position":{"x":1271.704,"y":1098.069},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"68"},{"statement":{"_text":"\uff08\u91cd\u65b0\u9009\u62e9\u5427\uff09"},"_actorName":"\u73a9\u5bb6","_actorParameterID":"6a96eed6-81cb-4925-81a0-38b01e99d518","_UID":"8be662f6-27ce-48da-9e38-17708d8a9ee5","_position":{"x":1284.065,"y":1229.069},"$type":"NodeCanvas.DialogueTrees.StatementNode","$id":"69"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"13"},"_targetNode":{"$ref":"14"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"14"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"17"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"21"},"_targetNode":{"$ref":"22"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"63"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"66"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"22"},"_targetNode":{"$ref":"68"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"25"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"25"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"25"},"_targetNode":{"$ref":"56"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"25"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"25"},"_targetNode":{"$ref":"61"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"27"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"29"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"29"},"_targetNode":{"$ref":"30"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"30"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"31"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"49"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"52"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"54"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"34"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"34"},"_targetNode":{"$ref":"35"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"35"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"36"},"_targetNode":{"$ref":"37"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"37"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"39"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"39"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"41"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"41"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"43"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"43"},"_targetNode":{"$ref":"44"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"44"},"_targetNode":{"$ref":"45"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"45"},"_targetNode":{"$ref":"46"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"46"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"48"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"48"},"_targetNode":{"$ref":"17"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"49"},"_targetNode":{"$ref":"50"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"50"},"_targetNode":{"$ref":"51"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"52"},"_targetNode":{"$ref":"53"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"53"},"_targetNode":{"$ref":"51"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"54"},"_targetNode":{"$ref":"55"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"51"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"56"},"_targetNode":{"$ref":"57"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"57"},"_targetNode":{"$ref":"58"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"59"},"_targetNode":{"$ref":"60"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"60"},"_targetNode":{"$ref":"58"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"61"},"_targetNode":{"$ref":"62"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"62"},"_targetNode":{"$ref":"58"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"63"},"_targetNode":{"$ref":"64"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"64"},"_targetNode":{"$ref":"65"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"66"},"_targetNode":{"$ref":"67"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"67"},"_targetNode":{"$ref":"65"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"68"},"_targetNode":{"$ref":"69"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"69"},"_targetNode":{"$ref":"65"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"\u6c88\u62ec","_id":"d8046779-39c0-4c29-bd4a-a562cff4010d","_actorObject":1},{"_keyName":"\u73a9\u5bb6","_id":"6a96eed6-81cb-4925-81a0-38b01e99d518","_actorObject":2},{"_keyName":"\u9009\u62e91","_id":"e66a4457-92de-407b-98fa-64472a957f9f","_actorObject":3},{"_keyName":"\u9009\u62e92","_id":"2a119955-47db-4b80-81b3-2d7b201c6b1a","_actorObject":4}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+  _boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 818577249}
+  - {fileID: 8210959807765652864}
+  - {fileID: 1496120827}
+  - {fileID: 597260304}
   _boundGraphSource:
     _version: 3.28
     _category: 
     _comments: 
-    _translation: {x: 0, y: 0}
+    _translation: {x: -36.395256, y: -50.871128}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 1
@@ -9835,6 +10123,22 @@ MonoBehaviour:
   _updateMode: 0
   _graph: {fileID: 0}
   _blackboard: {fileID: 818577254}
+--- !u!114 &818577256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818577246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c587e1a600cb55546ac1c4714f8d1804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temporaryUI: {fileID: 481025621}
+  EndUI: {fileID: 236255267}
+  autoHideTime: 1
+  bookUI: {fileID: 944576430}
 --- !u!1001 &822367011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11136,6 +11440,16 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8939627942807008, guid: e09917ff98e6cc444bb5541dd52f3f7f, type: 3}
   m_PrefabInstance: {fileID: 940336221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &944576430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6395622042714953049, guid: e92763415269db7468dd4d498ef42884, type: 3}
+  m_PrefabInstance: {fileID: 636502119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &944576431 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2121255435332921711, guid: e92763415269db7468dd4d498ef42884, type: 3}
+  m_PrefabInstance: {fileID: 636502119}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &975946158
 PrefabInstance:
@@ -18688,6 +19002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1496120826}
+  - component: {fileID: 1496120827}
   m_Layer: 0
   m_Name: Scene
   m_TagString: Untagged
@@ -18715,6 +19030,22 @@ Transform:
   - {fileID: 10872741}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496120827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496120825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\u9009\u62E91"
+  _portrait: {fileID: 0}
+  _dialogueColor: {r: 0, g: 0, b: 0, a: 1}
+  _dialogueOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1504213193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21830,7 +22161,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 236255268}
   - {fileID: 1231474374}
+  - {fileID: 481025622}
+  - {fileID: 944576431}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -25987,7 +26321,7 @@ Transform:
   m_GameObject: {fileID: 430153672225453863}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7922365, z: -0, w: 0.6102142}
-  m_LocalPosition: {x: 56.92, y: -1.89, z: -4.65}
+  m_LocalPosition: {x: -5.8, y: 1.2, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26096,6 +26430,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1497454604551032128, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2208816382454220655, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363641531149973096, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -351.416
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363641531149973096, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 24.109
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363641531149973096, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.1761
+      objectReference: {fileID: 0}
     - target: {fileID: 3475337699242490469, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
       propertyPath: m_Name
       value: '@DialogueUGUI'
@@ -26183,6 +26537,14 @@ PrefabInstance:
     - target: {fileID: 7524069379281215474, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338551734620932536, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
+      propertyPath: typingSounds.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8338551734620932536, guid: c9db81fe2bee55b4a9fc31ca6dcf9fe3, type: 3}
+      propertyPath: subtitleDelays.finalDelay
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26329,7 +26691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Player
   _portrait: {fileID: 0}
-  _dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+  _dialogueColor: {r: 0, g: 0, b: 0, a: 1}
   _dialogueOffset: {x: 0, y: 0, z: 0}
 --- !u!65 &8210959807765652865
 BoxCollider:
