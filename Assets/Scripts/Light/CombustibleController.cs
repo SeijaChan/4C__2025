@@ -8,6 +8,7 @@ public class CombustibleController : MonoBehaviour
 {
    private float _horizon;
    private float _vertical;
+   public MirrorUIController mirrorUIController;
    public float speed;
    private void Update()
    {
@@ -18,6 +19,9 @@ public class CombustibleController : MonoBehaviour
 
    private void Move()
    {
-      transform.position += new Vector3(_horizon, _vertical, 0) * (speed * Time.deltaTime);
+      if (mirrorUIController.canControl)
+      {
+         transform.position += new Vector3(_horizon, _vertical, 0) * (speed * Time.deltaTime);
+      }
    }
 }
