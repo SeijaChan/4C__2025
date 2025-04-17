@@ -8,10 +8,10 @@ public class LinearCandleController : MonoBehaviour
 {
     public float moveRange = 2.0f;
     public float sensitivity = 0.05f;
+    public Transform candle;
     public Transform pinhole;
     public Transform screen;
     public Transform imageCandle;
-    public float correctFactor;
 
     private Vector3 _originalPosition;
     private Vector3 _originalImageSize;
@@ -33,13 +33,13 @@ public class LinearCandleController : MonoBehaviour
     {
         float input = Input.GetAxis("Horizontal");
         _currentPosition += input * sensitivity;
-        _currentPosition = Mathf.Clamp(_currentPosition, -moveRange * 1.3f, moveRange * correctFactor);
-        gameObject.transform.position =_originalPosition + new Vector3(_currentPosition, 0, 0);
+        _currentPosition = Mathf.Clamp(_currentPosition, -moveRange, moveRange);
+        gameObject.transform.position =_originalPosition + new Vector3(0, 0, _currentPosition);
     }
 
     private void UpdateOptics()
     {
-        float u = Vector3.Distance(transform.position, pinhole.position);
+        float u = Vector3.Distance(candle.position, pinhole.position);
         float v = Vector3.Distance(pinhole.position, screen.position);
         float scaleFactor = v / u;
         imageCandle.localScale = _originalImageSize * scaleFactor;
